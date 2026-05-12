@@ -267,13 +267,6 @@ function renderPosts(data, container, label) {
         return;
     }
 
-    if (label) {
-        const lbl = document.createElement('p');
-        lbl.className = 'section-label';
-        lbl.textContent = label;
-        container.appendChild(lbl);
-    }
-
     data.forEach((row, i) => {
         const title   = row.Title  || row.Titulo      || '';
         const desc    = parseDescription(row.Description || row.Descripcion || '');
