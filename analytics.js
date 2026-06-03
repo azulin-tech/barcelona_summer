@@ -1,5 +1,5 @@
 /* ================================================
-   Olas & Calas — Analytics Tracker  v2
+   Barcelona Summer — Analytics Tracker  v2
    GDPR / LOPD / LSSICE compliant:
    analytics only fires after explicit opt-in.
 
@@ -8,7 +8,7 @@
      Google Apps Script web-app URL.
    ================================================ */
 
-const APP_SCRIPT_URL = 'TU_WEBAPP_URL'; // ← paste here
+const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzp270qGILOMyqxKkFXvA8x4x1W5AVOVsaU0gIrL_AcTnJhUsKDDnwnfMRuFUp60WtS/exec'; // ← paste here
 
 /* ── Consent gate ────────────────────────────────
    Analytics only run if the user accepted cookies.
