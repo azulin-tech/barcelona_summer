@@ -32,7 +32,7 @@
             <div class="lang-selector" id="lang-selector">
                 <button class="lang-btn" id="lang-btn" aria-label="Idioma" aria-expanded="false">
                     <span class="lang-globe">🌐</span>
-                    <span id="lang-current">中文</span>
+                    <span id="lang-current">ES</span>
                     <span class="lang-caret">▾</span>
                 </button>
                 <div class="lang-menu" id="lang-menu" aria-hidden="true"></div>
@@ -61,8 +61,8 @@
             <div class="video-overlay"></div>
         </div>
         <div class="hero-text">
-            <p class="subtitle-eng">A Mediterranean Dream</p>
-            <h1 class="main-title">巴塞罗那夏日企划</h1>
+            <p class="subtitle-eng">A Mediterranean Story</p>
+            <h1 class="main-title">巴塞罗那夏日企划</em></h1>
             <div class="hero-divider"></div>
             <p class="manifesto">Mar, sal, arena y aventura.<br>Historias desde el Mediterráneo.</p>
         </div>
@@ -86,13 +86,21 @@
     <!-- Footer -->
     <footer id="main-footer">
         <div class="footer-inner">
-            <p class="footer-logo">BARCELONA SUMMER CHRONICLES</p>
+            <p class="footer-logo">Barcelona Summer</p>
             <div class="footer-icons" aria-hidden="true"><span>☀</span><span>≈</span><span>⚓</span></div>
             <p class="footer-credit">INSPIRED BY THE MEDITERRANEAN SEA</p>
+            <div class="footer-legal">
+                <a href="aviso-legal.html">Aviso Legal</a>
+                <a href="privacidad.html">Privacidad</a>
+                <a href="cookies.html">Cookies</a>
+                <button onclick="openConsentSettings()">Preferencias de cookies</button>
+            </div>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="consent.js"></script>
+    <script src="analytics.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

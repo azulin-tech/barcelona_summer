@@ -1,5 +1,5 @@
 /* ================================================
-   Barcelona Summer — app.js  v4
+   Barcelona Summer — app.js  v5b
    ================================================ */
 
 const SHEET_ID = '1jDSAOSVUoxDcu1rJLULk2_5IY9zfcNk0axT0wBaskw0';
@@ -34,7 +34,7 @@ const LANGUAGES = [
     { code: 'fil',   label: 'Filipino',   flag: '🇵🇭', gtCode: 'fil'   },
 ];
 
-let activeLang = 'zh-TW';
+let activeLang = 'es';
 
 /* ── Language Selector ───────────────────────── */
 function buildLangMenu() {
@@ -210,8 +210,9 @@ function loadHome() {
     showHero('home');
     const content = document.getElementById('content');
     content.innerHTML = '';
-    content.style.display = 'none';   // kill the white gap entirely
+    content.style.display = 'none';
     document.getElementById('main-footer').style.marginTop = '0';
+    if (typeof trackSection === 'function') trackSection('home');
 }
 
 /* ── Section page ────────────────────────────── */
@@ -252,6 +253,7 @@ async function loadSection(name) {
         }
 
         showHero('sub', name, subtitle, bgImg, 'Sección');
+        if (typeof trackSection === 'function') trackSection(name);
         renderPosts(final, container, name);
     } catch (e) {
         container.innerHTML = '<p class="empty-state">Error al cargar los posts.</p>';
